@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header section start-->
+    <header>
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-3">
+                <div class="logo-container d-flex align-items-center">
+                    <img src="green-healthcare-logo-design-with-human-life-symbol-illustration-concept-vector.jpg" class="logo img-fluid" alt="Hospital Logo">
+                    <h1 class="store-title ms-2">DIVISION<br> <span>SPECIALIZED</span></h1>
+                </div>
+                <nav>
+                    <ul class="nav-links d-none d-md-flex list-unstyled mb-0">
+                        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#service" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Service</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#emergency">Emergency Services</a></li>
+                                <li><a class="dropdown-item" href="#inpatient">Medical/Surgical Units</a></li>
+                                <li><a class="dropdown-item" href="#icu">Intensive Care Units (ICU)</a></li>
+                                <li><a class="dropdown-item" href="#laboratory">Laboratory Services</a></li>
+                                <li><a class="dropdown-item" href="#specialty">Specialty Departments</a></li>
+                                <li><a class="dropdown-item" href="#pharmacy">Pharmacy</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#doctor" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Doctors</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#Dr. Muhammad Yunus">Dr. Muhammad Yunus</a></li>
+                                <li><a class="dropdown-item" href="#Dr. Zahid Maleque">Dr. Zahid Maleque</a></li>
+                                <li><a class="dropdown-item" href="#Dr. A. K. Azad Khan">Dr. A. K. Azad Khan</a></li>
+                                <li><a class="dropdown-item" href="#Dr. Kazi Abul Kalam">Dr. Kazi Abul Kalam</a></li>
+                                <li><a class="dropdown-item" href="#Dr. Syed Modasser Ali">Dr. Syed Modasser Ali</a></li>
+                                <li><a class="dropdown-item" href="#Dr. Anisur Rahman">Dr. Anisur Rahman</a></li>
+                                <li><a class="dropdown-item" href="#Dr. A. K. Azad Khan">Dr. A. K. Azad Khan</a></li>
+                                <li><a class="dropdown-item" href="#Dr. Noorul Islam">Dr. Noorul Islam</a></li>
+                                <li><a class="dropdown-item" href="#Dr. S. M. A. H. Quaderi">Dr. S. M. A. H. Quaderi</a></li>
+                                <li><a class="dropdown-item" href="#Dr. Sarwar Jahan">Dr. Sarwar Jahan</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#appointment" class="nav-link">Appointment</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="d-md-none burger" onclick="toggleSidebar()">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <aside id="sidebar" class="sidebar d-md-none">
+        <ul class="sidebar-links list-unstyled mb-0">
+            <li>
+                <a href="#home" onclick="toggleSidebar()">
+                    <i class="fas fa-home"></i> Home
+                </a>
+            </li>
+            <li>
+                <a href="#service" onclick="toggleSidebar()">
+                    <i class="fas fa-cogs"></i> Service
+                </a>
+            </li>
+            <li>
+                <a href="#doctor" onclick="toggleSidebar()">
+                    <i class="fas fa-user-md"></i> Doctors
+                </a>
+            </li>
+            <li>
+                <a href="#appointment" onclick="toggleSidebar()">
+                    <i class="fas fa-calendar"></i> Appointment
+                </a>
+            </li>
+            <li>
+                <a href="#contact" onclick="toggleSidebar()">
+                    <i class="fas fa-phone"></i> Contact
+                </a>
+            </li>
+        </ul>
+    </aside>
+<!-- header section ended -->
+
+<!-- home section start-->
+
+<div class="background-container" id="home">
+    <img class="background-image" src="doctor-medical-lab-coat-stethoscopedoctor-600nw-1960264744.webp" alt="Background Image">
+    <div class="container content-container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12 text-center text-lg-start text-content">
+                <div class="title">
+                    <h1>Welcome to our hospital,<br><span>where we prioritize our patients' well-being</span></h1>
+                    <p>Our commitment is to provide compassionate care and ensure the health and recovery of those we serve.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 image-content">
+                <h1>Our Motivation</h1>
+                <div class="inner-technology-container">
+                    <div class="inner-technology">
+                        <span></span>
+                        <i class="fi fi-tr-user-md"></i> Hope
+                    </div>
+                    <div class="inner-technology">
+                        <span></span>
+                        <i class="fi fi-tr-hands-heart"></i> Compassion
+                    </div>
+                    <div class="inner-technology">
+                        <span></span>
+                        <i class="fi fi-rr-doctor"></i> Resilience
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- home section ended-->
+
+
+<!-- service section start-->
+
+<div class="container" id="service">
+    <div class="row">
+        <div class="col-12">
+            <div class="service">
+                <h1>Our Services</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="main-services">
+        <div class="inner-services" id="emergency">
+            <div class="service-icon">
+                <i class="fa-solid fa-truck-medical"></i>
+            </div>
+            <h3>Emergency Services</h3>
+            <p>We offer extensive medical procedures to outbound & inbound patients what it is and we are very proud achievement staff.</p>
+        </div>
+
+        <div class="inner-services" id="inpatient">
+            <div class="service-icon">
+                <i class="fa-regular fa-hospital"></i>
+            </div>
+            <h3>Medical/Surgical Units</h3>
+            <p>We offer extensive medical procedures to outbound & inbound patients what it is and we are very proud achievement staff.</p>
+        </div>
+
+        <div class="inner-services" id="icu">
+            <div class="service-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <h3>Intensive Care Units (ICU)</h3>
+            <p>We offer extensive medical procedures to outbound & inbound patients what it is and we are very proud achievement staff.</p>
+        </div>
+
+        <div class="inner-services" id="laboratory">
+            <div class="service-icon">
+                <i class="fa-solid fa-notes-medical"></i>
+            </div>
+            <h3>Laboratory</h3>
+            <p>We offer extensive medical procedures to outbound & inbound patients what it is and we are very proud achievement staff.</p>
+        </div>
+
+        <div class="inner-services" id="specialty">
+            <div class="service-icon">
+                <i class="fa-solid fa-list-check"></i>
+            </div>
+            <h3>Specialty</h3>
+            <p>We offer extensive medical procedures to outbound & inbound patients what it is and we are very proud achievement staff.</p>
+        </div>
+
+        <div class="inner-services" id="pharmacy">
+            <div class="service-icon">
+                <i class="fa-solid fa-user-doctor"></i>
+            </div>
+            <h3>Pharmacy</h3>
+            <p>We offer extensive medical procedures to outbound & inbound patients what it is and we are very proud achievement staff.</p>
+        </div>
+    </div>
+<!-- service section end-->
+
+<!-- doctors section start-->
+<div class="container" id="doctor">
+    <div class="row">
+        <div class="col-12">
+            <div class="service">
+                <h1>Our Doctors</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="carousel">
+        <div class="main-doctor">
+            <div class="inner-doctor" id="Dr. Muhammad Yunus">
+                <div class="doc-icons">
+                    <h3>Dr. Muhammad Yunus<br><span>Specialist in oncology</span></h3>
+                </div>
+                <div class="doctor-icon">
+                    <img src="team1.jpg" alt="">
+                </div>
+                <div class="btn">Make Appointment</div>
+            </div>
+            <div class="inner-doctor" id="Dr. Zahid Maleque">
+                <div class="doc-icons">
+                    <h3>Dr. Zahid Maleque<br><span>Specialist in oncology</span></h3>
+                </div>
+                <div class="doctor-icon">
+                    <img src="team2.jpg" alt="">
+                </div>
+                <div class="btn">Make Appointment</div>
+            </div>
+            <div class="inner-doctor" id="Dr. A. K. Azad Khan">
+                <div class="doc-icons">
+                    <h3>Dr. A. K. Azad Khan<br><span>Specialist in oncology</span></h3>
+                </div>
+                <div class="doctor-icon">
+                    <img src="team3.jpg" alt="">
+                </div>
+                <div class="btn">Make Appointment</div>
+            </div>
+            <div class="inner-doctor" id="Dr. Muhammad Yunus">
+                <div class="doctor-icon">
+                    <img src="team2.jpg" alt="">
+                </div>
+                <h3>Dr. Muhammad Yunus</h3>
+                <div class="btn">Make Appointment</div>
+            </div>
+            <div class="inner-doctor" id="Dr. Muhammad Yunus">
+                <div class="doctor-icon">
+                    <img src="team1.jpg" alt="">
+                </div>
+                <h3>Dr. Muhammad Yunus</h3>
+                <div class="btn">Make Appointment</div>
+            </div>
+            <div class="inner-doctor" id="Dr. Muhammad Yunus">
+                <div class="doctor-icon">
+                    <img src="team4.jpg" alt="">
+                </div>
+                <h3>Dr. Muhammad Yunus</h3>
+                <div class="btn">Make Appointment</div>
+            </div>
+            <div class="inner-doctor" id="Dr. Muhammad Yunus">
+                <div class="doctor-icon">
+                    <img src="team3.jpg" alt="">
+                </div>
+                <h3>Dr. Muhammad Yunus</h3>
+                <div class="btn">Make Appointment</div>
+            </div>
+            <div class="inner-doctor" id="Dr. Muhammad Yunus">
+                <div class="doctor-icon">
+                    <img src="team1.jpg" alt="">
+                </div>
+                <h3>Dr. Muhammad Yunus</h3>
+                <div class="btn">Make Appointment</div>
+            </div>
+            <div class="inner-doctor" id="Dr. Muhammad Yunus">
+                <div class="doctor-icon">
+                    <img src="team4.jpg" alt="">
+                </div>
+                <h3>Dr. Muhammad Yunus</h3>
+                <div class="btn">Make Appointment</div>
+            </div>
+           
+        </div>
+
+        <div class="button">
+            <button class="prev"><i class="fas fa-arrow-left"></i></button>
+            <button class="next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+</div>
+
+<!-- doctor section end-->
+
+<!--  appointment start-->
+<div class="container" id="appointment">
+    <div class="row">
+        <div class="col-12">
+            <div class="service">
+                <h1>Book Appointment</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="appointment">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 px-5">
+            <img src="online-doctor-with-medical-record-flat-vector-illustration-banner_128772-802.avif" class="img-fluid img-thumbnail" alt="Doctor">
+        </div>
+        <div class="col-md-6">
+            <h2 class="mb-4">Book Appointment</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Your Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="form-label">Date</label>
+                    <input type="date" class="form-control" id="date">
+                </div>
+                <button type="submit" class="btn1 btn-primary">Book Now</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- appointment section end-->
+
+<!-- contact section start-->
+<footer class="bg-secondary my-5 py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <h3>About Us</h3>
+          <ul class="list-unstyled">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Our Team</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h3>Discover</h3>
+          <ul class="list-unstyled">
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h3>Resources</h3>
+          <ul class="list-unstyled">
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4" id="contact">
+          <h3>Contact Us</h3>
+          <form class="contact-form">
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Subject" required>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="3" placeholder="Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Send</button>
+          </form>
+        </div>
+      </div>
+      <p class="text-center mt-4">&copy; 2023 Company Name. All rights reserved.</p>
+    </div>
+  </footer>
+  
+<!-- contact section end-->
+
+
+
+    <script>
+        function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    if (sidebar.style.right === '-250px') {
+        sidebar.style.right = '0px';
+    } else {
+        sidebar.style.right = '-250px';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const next = document.querySelector('.next');
+    const prev = document.querySelector('.prev');
+    const services = document.querySelector('.main-doctor');
+    const items = document.querySelectorAll('.inner-doctor');
+    const totalItems = items.length;
+    const itemsPerPage = 3; // Number of items to show per view
+    let currentIndex = 0;
+
+    // Show the first set of items
+    updateCarousel();
+
+    next.addEventListener('click', () => {
+        if (currentIndex < totalItems - itemsPerPage) {
+            currentIndex += itemsPerPage;
+        } else {
+            currentIndex = 0; // Loop back to the first set
+        }
+        updateCarousel();
+    });
+
+    prev.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex -= itemsPerPage;
+        } else {
+            currentIndex = Math.max(totalItems - itemsPerPage, 0); // Loop back to the last set
+        }
+        updateCarousel();
+    });
+
+    function updateCarousel() {
+        // Hide all items
+        items.forEach((item, index) => {
+            item.style.display = 'none';
+        });
+
+        // Show the current set of items
+        for (let i = currentIndex; i < currentIndex + itemsPerPage; i++) {
+            if (i < totalItems) {
+                items[i].style.display = 'block';
+            }
+        }
+    }
+});
+
+    </script>
+    
+</body>
+</html>
